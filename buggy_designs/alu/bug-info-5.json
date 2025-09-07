@@ -1,0 +1,23 @@
+{
+    "case_name": "alu_5",
+
+    "module_name" : "alu",
+
+    "correct_design": "./buggy_designs/alu/alu.v",
+
+    "buggy_design": "./buggy_designs/alu/alu_buggy_5.v",
+
+    "testbench": "./buggy_designs/alu/alu_tb.sv",
+
+    "input_signals": {
+        "opcode": 4,
+        "a": 8,
+        "b": 8
+    },
+
+    "bug_trigger_input": "./buggy_designs/alu/bug_trigger_input_2.txt",
+
+    "sequential_flag": false
+
+  }
+  

@@ -1,0 +1,16 @@
+busy
+haddr_r
+wr_data_r
+rd_data_r
+data_mask_low_r
+data_mask_high_r
+addr_r
+bank_addr_r
+rd_ready_r
+state_cnt
+refresh_cnt
+command
+state
+command_nxt
+state_cnt_nxt
+next

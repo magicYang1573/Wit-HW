@@ -1,0 +1,35 @@
+{
+    "case_name": "i2c-2",
+
+    "module_name" : "i2c_master_top",
+
+    "correct_design": "./buggy_designs/i2c/i2c_master_top.sync_reset.v", 
+
+    "buggy_design": "./buggy_designs/i2c/i2c_master_top_buggy_2.sync_reset.v", 
+
+    "include_files": [
+        "./buggy_designs/i2c/i2c_master_byte_ctrl.sync_reset.v",
+        "./buggy_designs/i2c/timescale.v",
+        "./buggy_designs/i2c/i2c_master_defines.v",
+        "./buggy_designs/i2c/i2c_master_bit_ctrl.sync_reset.v"
+    ],
+
+    "testbench": "./buggy_designs/i2c/i2c-tb.sv",
+
+    "input_signals": {
+        "wb_rst_i": 1,
+        "arst_i": 1,
+        "wb_adr_i": 3,
+        "wb_dat_i": 8,
+        "wb_we_i": 1,
+        "wb_stb_i": 1,
+        "wb_cyc_i": 1,
+        "scl_pad_i": 1,
+        "sda_pad_i": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/i2c/bug_trigger_input_2.txt",
+
+    "sequential_flag": true
+  }
+  

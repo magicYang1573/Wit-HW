@@ -1,0 +1,36 @@
+{
+    "case_name": "sha3-2",
+
+    "module_name" : "keccak",
+
+    "correct_design": "./buggy_designs/sha3/low_throughput_core/f_permutation.v",
+
+    "buggy_design": "./buggy_designs/sha3/low_throughput_core/f_permutation_buggy_2.v",
+
+    "include_files": [
+        "./buggy_designs/sha3/low_throughput_core/keccak.v",
+        "./buggy_designs/sha3/low_throughput_core/padder.v", 
+        "./buggy_designs/sha3/low_throughput_core/padder1.v",
+        "./buggy_designs/sha3/low_throughput_core/rconst.v",
+        "./buggy_designs/sha3/low_throughput_core/round.v"
+    ],
+
+    "testbench": "./buggy_designs/sha3/low_throughput_core/keccak-tb.sv", 
+
+    "input_signals": {
+        "reset": 1,
+        "in": 32,
+        "in_ready": 1,
+        "is_last": 1,
+        "byte_num": 2
+    },
+
+    "bug_trigger_input": "./buggy_designs/sha3/low_throughput_core/bug_trigger_input_1.txt",
+
+    "sequential_flag": true,
+
+    "bug_loc": {
+
+    }
+  }
+  

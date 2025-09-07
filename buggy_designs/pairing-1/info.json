@@ -1,0 +1,38 @@
+{
+    "case_name": "pairing-1",
+
+    "module_name" : "duursma_lee_algo",
+
+    "correct_design": "./buggy_designs/pairing-1/tate_pairing.v",
+
+    "buggy_design": "./buggy_designs/pairing-1/tate_pairing_kgoliya_buggy1.v",
+
+    "include_files": [
+        "./buggy_designs/pairing-1/f32m.v", 
+        "./buggy_designs/pairing-1/f33m.v", 
+        "./buggy_designs/pairing-1/f36m.v", 
+        "./buggy_designs/pairing-1/f3m.v", 
+        "./buggy_designs/pairing-1/f3.v", 
+        "./buggy_designs/pairing-1/fun.v", 
+        "./buggy_designs/pairing-1/inc.v"
+    ],
+
+    "testbench": "./buggy_designs/pairing-1/pairing-tb.sv",
+
+    "input_signals": {
+        "reset": 1,
+        "xp": 194,
+        "yp": 194,
+        "xr": 194,
+        "yr": 194
+    },
+
+    "bug_trigger_input": "./buggy_designs/pairing-1/bug_trigger_input.txt",
+
+    "sequential_flag": true,
+
+    "bug_loc": {
+
+    }
+  }
+  

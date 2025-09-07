@@ -1,0 +1,22 @@
+{
+    "case_name": "counter-3",
+
+    "module_name" : "first_counter",
+
+    "correct_design": "./buggy_designs/counter/first_counter_overflow.v",
+
+    "buggy_design": "./buggy_designs/counter/first_counter_overflow_buggy_3.v",
+
+    "testbench": "./buggy_designs/counter/first_counter_overflow_tb.sv",
+
+    "input_signals": {
+        "reset": 1,
+        "enable": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/counter/bug_trigger_input_3.txt",
+
+    "sequential_flag": true
+
+  }
+  

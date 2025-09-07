@@ -1,0 +1,23 @@
+{
+    "case_name": "fsm_16-2",
+
+    "module_name" : "fsm_16",
+
+    "correct_design": "./buggy_designs/fsm_16/fsm_16.v",
+
+    "buggy_design": "./buggy_designs/fsm_16/fsm_16_buggy_2.v",
+
+    "testbench": "./buggy_designs/fsm_16/fsm_16_tb.sv",
+
+    "input_signals": {
+        "reset": 1,
+        "input1": 1,
+        "input2": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/fsm_16/bug_trigger_input_2.txt",
+
+    "sequential_flag": true
+
+  }
+  

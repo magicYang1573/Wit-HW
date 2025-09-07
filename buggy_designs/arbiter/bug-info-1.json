@@ -1,0 +1,24 @@
+{
+    "case_name": "arbiter-1",
+
+    "module_name" : "arbiter",
+
+    "correct_design": "./buggy_designs/arbiter/arbiter.v",
+
+    "buggy_design": "./buggy_designs/arbiter/arbiter_buggy_1.v",
+
+    "testbench": "./buggy_designs/arbiter/arbiter_tb.sv",
+
+    "input_signals": {
+        "REQUEST1": 1,
+        "REQUEST2": 1,
+        "REQUEST3": 1,
+        "REQUEST4": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/arbiter/bug_trigger_input_1.txt",
+
+    "sequential_flag": true
+
+  }
+  

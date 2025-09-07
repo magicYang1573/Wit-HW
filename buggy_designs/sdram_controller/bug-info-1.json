@@ -1,0 +1,41 @@
+{
+    "case_name": "sdram-1",
+
+    "module_name" : "sdram_controller",
+
+    "correct_design": "./buggy_designs/sdram_controller/sdram_controller.no_tri_state.v",
+
+    "buggy_design": "./buggy_designs/sdram_controller/sdram_controller_buggy_1.no_tri_state.v",
+
+    "include_files": [
+        
+    ],
+
+    "testbench": "./buggy_designs/sdram_controller/sdram-tb.sv",
+
+    "input_signals": {
+        "wr_addr": 24,
+        "wr_data": 16,
+        "wr_enable": 1,
+        "rd_addr": 23,
+        "rd_enable": 1,
+        "rst_n": 1,
+        "data_in": 16,
+        "clock_enable": 1,
+        "cs_n": 1,
+        "ras_n": 1,
+        "cas_n": 1,
+        "we_n": 1,
+        "data_mask_low": 1,
+        "data_mask_high": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/sdram_controller/bug_trigger_input_1.txt",
+
+    "sequential_flag": true,
+
+    "bug_loc": {
+
+    }
+  }
+  

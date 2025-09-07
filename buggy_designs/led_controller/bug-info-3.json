@@ -1,0 +1,23 @@
+{
+    "case_name": "led_controller-3",
+
+    "module_name" : "led_controller",
+
+    "correct_design": "./buggy_designs/led_controller/led_controller.v",
+
+    "buggy_design": "./buggy_designs/led_controller/led_controller_buggy_3.v",
+
+    "testbench": "./buggy_designs/led_controller/led_controller_tb.sv",
+
+    "input_signals": {
+        "reset": 1,
+        "pedestrian_button": 1,
+        "car_sensor": 1
+    },
+
+    "bug_trigger_input": "./buggy_designs/led_controller/bug_trigger_input_3.txt",
+
+    "sequential_flag": true
+
+  }
+  
